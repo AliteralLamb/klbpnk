@@ -39,7 +39,7 @@ const MobileHd = () => {
             <span className="nav-item">ARCHIVE</span>
             <ul className="mobile-dropdown">
               <li><Link className="li-items" to="/0024">0024</Link></li>
-              <li><Link className="li-items" to="#0025">0025</Link></li>
+              <li><Link className="li-items" to="/0025">0025</Link></li>
             </ul>
           </li>
           <li>
