@@ -1,4 +1,3 @@
-// Router.js
 import React, { useState } from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import "./router.css";

@@ -5,8 +5,8 @@ import Footer from '../components/footer';
 
 const ComingSoonPage = () => {
   const [currentTime, setCurrentTime] = useState('');
-  const [email, setEmail] = useState(''); // State to hold the email input
-  const [submitted, setSubmitted] = useState(false); // State to track submission status
+  const [email, setEmail] = useState('');
+  const [submitted, setSubmitted] = useState(false);
 
   const updateTime = () => {
     const now = new Date();
@@ -28,29 +28,27 @@ const ComingSoonPage = () => {
   }, []);
 
   const handleEmailChange = (event) => {
-    setEmail(event.target.value); // Update the email state
+    setEmail(event.target.value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     
-    // If using Formspree, do not forget to send data via a POST request
     fetch('https://formspree.io/f/manynkpe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ email }), // Send the email to Formspree
+      body: JSON.stringify({ email }),
     })
     .then(response => {
       if (response.ok) {
-        setSubmitted(true); // Update submission status to true
-        setEmail(''); // Clear the email input field after submission
+        setSubmitted(true);
+        setEmail('');
       }
     })
     .catch(error => {
       console.error('Error submitting email:', error);
-      // Handle the error if necessary, but no alerts as per your request
     });
   };
 
@@ -62,7 +60,7 @@ const ComingSoonPage = () => {
         <form onSubmit={handleSubmit} className="email-form">
           <input 
             type="email" 
-            value={email} // Bind the value of the input to the email state
+            value={email}
             onChange={handleEmailChange} 
             placeholder="Insert email..." 
             required 
