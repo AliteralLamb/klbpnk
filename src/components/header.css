@@ -51,6 +51,9 @@
     align-items: center;
     font-size: clamp(12px, 1.5vw, 18px);
 }
+:root {
+    --transform-value: -40%;
+}
 
 .logo {
     position: relative;
@@ -58,7 +61,18 @@
     font-size: clamp(16px, 2.4vw, 24px);
     ;
     text-align: center;
-    transform: translateX(-40%);
+    transform: translateX(var(--transform-value));
+}
+@media (min-width: 1500px) {
+    :root {
+        --transform-value: -20%;
+    }
+}
+
+@media (min-width: 1700px) {
+    :root {
+        --transform-value: 0%;
+    }
 }
 
 .logo-link {
