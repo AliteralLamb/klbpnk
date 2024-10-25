@@ -34,7 +34,7 @@ const Page404 = () => {
     <div className="page-404">
       {isMobile ? <MobileHd /> : <Header />}
       <div className="content">
-        <img src='${process.env.PUBLIC_URL}/img/errorLogo.png' className='errorLogo' alt="Error Logo" />
+        <img src='img/errorLogo.png' className='errorLogo' alt="Error Logo" />
         <p>Error 404</p>
       </div>
       <Footer />

@@ -27,7 +27,7 @@ const Page0024 = () => {
     <div className="page-0024">
       { isMobile ? <MobileHd/> : <Header />}
       <main className="scrollable-image-container">
-        <img src='${process.env.PUBLIC_URL}/img/scrollImg.png' alt="Banner" loading="lazy"/>
+        <img src='img/scrollImg.png' alt="Banner" loading="lazy"/>
       </main>
       <Footer />
     </div>

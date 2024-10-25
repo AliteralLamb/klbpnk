@@ -56,7 +56,7 @@ const ComingSoonPage = () => {
 
   return (
     <div className="landing-page coming-soon-page">
-      <Link className="logo-link" to="/"><img src='${process.env.PUBLIC_URL}/img/logo.png' className='logo-image' alt='KLBPNK' /></Link>
+      <Link className="logo-link" to="/"><img src='img/logo.png' className='logo-image' alt='KLBPNK' /></Link>
       <div className="content-wrapper">
         <p className="current-time">{currentTime}</p>
         <form onSubmit={handleSubmit} className="email-form">

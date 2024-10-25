@@ -30,7 +30,7 @@ const LandingPage = ({ onEnter }) => {
 
   return (
     <div className={`landing-page ${isFading ? 'fade-out' : ''}`} onClick={handleClick}>
-      <img src="${process.env.PUBLIC_URL}/img/logo.png" alt="KLBPNK" className="logo-image"/>
+      <img src="img/logo.png" alt="KLBPNK" className="logo-image"/>
       <div className="content-wrapper">
         <div className="landing-text">
           <p>__Klbpnk__+_*2025_all_rights_reserved__+_</p>
