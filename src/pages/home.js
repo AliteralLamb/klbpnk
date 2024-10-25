@@ -28,7 +28,7 @@ const Home = () => {
     <div className="home-page">
     { isMobile ? <MobileHd/> : <Header />}
       <main className="banner">
-        <img src='/img/cables.png' alt="Homepage Banner" loading="lazy" />
+        <img src='${process.env.PUBLIC_URL}/img/cables.png' alt="Homepage Banner" loading="lazy" />
       </main>
       <Footer /> 
     </div>

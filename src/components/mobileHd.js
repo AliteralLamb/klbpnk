@@ -15,7 +15,7 @@ const MobileHd = () => {
         </div>
 
         <div className="logo">
-          <Link className="logo-link" to="/"><img src="/img/logo.png" alt="KLBPNK" className="mobile-logo" /></Link>
+          <Link className="logo-link" to="/"><img src="${process.env.PUBLIC_URL}/img/logo.png" alt="KLBPNK" className="mobile-logo" /></Link>
         </div>
       </div>
 

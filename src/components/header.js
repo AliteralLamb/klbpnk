@@ -58,7 +58,7 @@ const Header = () => {
           </li>
           <li><Link className="nav-item" to="/soon">SHOP</Link></li>
           <li className="logo">
-            <Link className="logo-link" to="/"><img src="/img/logo.png" alt="KLBPNK" className="logo-imageh"/></Link>
+            <Link className="logo-link" to="/"><img src="${process.env.PUBLIC_URL}/img/logo.png" alt="KLBPNK" className="logo-imageh"/></Link>
           </li>
         </ul>
         <div className="date-time">{currentTime}</div>
