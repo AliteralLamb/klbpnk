@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../assets/fonts/NimbusSanExtD-Reg.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: 'CustomFont', sans-serif;
+}
+
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-family: 'CustomFont', sans-serif;
+}
+  .content p{
+    padding-top: 20px;
+  }
+
+.errorLogo {
+  height: 40px;
+  width: auto;
+  max-width: 100%;
+  animation: spinY 10s linear infinite;
+}
+
+@keyframes spinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+      transform: rotateY(360deg);
+  }
+}

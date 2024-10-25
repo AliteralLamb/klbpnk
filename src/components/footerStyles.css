@@ -1,0 +1,24 @@
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../assets/fonts/NimbusSanExtD-Reg.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+    font-family: 'CustomFont', sans-serif;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+    font-family: 'CustomFont', sans-serif;
+  }
+  
