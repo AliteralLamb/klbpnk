@@ -3,19 +3,20 @@
     src: url('../assets/fonts/NimbusSanExtD-Reg.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-  
+}
+
 
 .header {
-    background-color: black; 
-    color: white; 
-    padding: 20px 0;
+    background-color: black;
+    color: white;
+    padding: 2vw 0;
     display: flex;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
     position: sticky;
-    top:0;
+    top: 0;
+    flex: 1;
     z-index: 1000;
 }
 
@@ -25,14 +26,15 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 2vw;
     box-sizing: border-box;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 2vw;
+    ;
     margin: 0;
     padding: 0;
     flex-grow: 1;
@@ -41,18 +43,20 @@
 .nav-item {
     color: white;
     cursor: pointer;
-    padding: 10px 40px;
+    padding: 1vw 2vw;
     text-decoration: none;
     font-family: 'CustomFont', sans-serif;
     line-height: 1.5;
     display: flex;
     align-items: center;
+    font-size: clamp(12px, 1.5vw, 18px);
 }
 
 .logo {
     position: relative;
     left: 11%;
-    font-size: 24px;
+    font-size: clamp(16px, 2.4vw, 24px);
+    ;
     text-align: center;
     transform: translateX(-40%);
 }
@@ -64,7 +68,9 @@
 
 
 .logo-imageh {
-    height: 40px;
+    padding-top: 1vw;
+    padding-left: 6vw ;
+    height: clamp(16px, 2vw, 40px);
     width: auto;
     max-width: 100%;
 }
@@ -72,12 +78,14 @@
 
 .date-li {
     margin-left: auto;
-    padding-right: 10px;
+    padding-right: 1vw;
     display: flex;
     align-items: center;
 }
+
 .date-time {
-    font-size: 14px;
+    font-size: clamp(10px, 1.2vw, 14px);
+    ;
     color: white;
     white-space: nowrap;
     text-align: right;
@@ -91,7 +99,7 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: black;
-    padding: 10px 0;
+    padding: 1vw 0;
     border-radius: 5px;
     z-index: 1000;
     display: none;
@@ -103,7 +111,7 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: black;
-    padding: 10px 0;
+    padding: 1vw 0;
     border-radius: 5px;
     z-index: 1000;
     display: none;
@@ -125,27 +133,25 @@
     list-style: none;
 }
 
-.menu-dropdown li + li,
-.archive-dropdown li + li {
+.menu-dropdown li+li,
+.archive-dropdown li+li {
     margin-top: 10px;
 }
 
 .menu-dropdown a,
 .archive-dropdown a {
-    color: white; 
-    padding: 10px 20px;
+    color: white;
+    padding: 1vw 2vw;
     display: block;
     text-decoration: none;
-    font-size: 14px;
+    font-size: clamp(10px, 1.2vw, 14px);
 }
 
 .menu-dropdown a:hover,
 .archive-dropdown a:hover {
-    background-color: #555; 
+    background-color: #555;
 }
 
-.li-items{
+.li-items {
     font-family: 'CustomFont', sans-serif;
 }
-
-

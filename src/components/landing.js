@@ -9,7 +9,7 @@ const LandingPage = ({ onEnter }) => {
     setIsFading(true);
     setTimeout(onEnter, 500);
   }, [onEnter]);
-  
+
   const handleClick = useCallback(() => {
     handleEnter();
   }, [handleEnter]);
