@@ -13,10 +13,7 @@ const MobileHd = () => {
         <div className="hamburger" onClick={toggleMenu}>
           ☰
         </div>
-
-        <div className="logo">
           <Link className="logo-link" to="/"><img src="img/logo.png" alt="KLBPNK" className="mobile-logo" /></Link>
-        </div>
       </div>
 
       {/* Mobile Menu Dropdown */}

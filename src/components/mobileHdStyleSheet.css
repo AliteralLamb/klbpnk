@@ -16,80 +16,85 @@ body {
 
 /* Mobile Header */
 .mobile-header {
-background-color: black;
-color: white;
-padding: 10px;
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 100%;
-box-sizing: border-box;
-font-family: 'CustomFont', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Mobile Navbar */
 .mobile-nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
 }
 
 /* Hamburger Menu */
 .hamburger {
-font-size: 30px;
-cursor: pointer;
-color: white;
-font-family: 'CustomFont', sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  left: 10px;
 }
 
-/* Logo for Mobile */
+/* Centered Logo for Mobile */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .mobile-logo {
-padding: 0 22vw;
-height: 25px;
-width: auto;
+  height: 25px;
+  width: auto;
+  left:  0;
 }
 
 /* Mobile Menu */
 .mobile-menu {
-list-style: none;
-padding: 0;
-margin: 20px 0;
-width: 100%;
-background-color: black;
-display: flex;
-flex-direction: column;
-align-items: center;
-font-family: 'CustomFont', sans-serif;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Dropdown for Mobile */
 .mobile-dropdown {
-list-style: none;
-padding: 0;
-margin: 10px 0;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
 }
 
 .mobile-dropdown li {
-margin: 5px 0;
+  margin: 5px 0;
 }
 
 .li-items {
-color: white;
-text-decoration: none;
-padding: 10px 20px;
-display: block;
-font-family: 'CustomFont', sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
 }
 
 .li-items:hover {
-background-color: #333;
+  background-color: #333;
 }
 
 /* Adjust spacing for menu items */
 .nav-item {
-color: white;
-cursor: pointer;
-padding: 10 20px;
-font-family: 'CustomFont', sans-serif;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
 }
