@@ -81,6 +81,11 @@
         --transform-value: 10%;
     }
 }
+@media (min-width: 1200px) {
+    :root {
+        --transform-value: 30%;
+    }
+}
 @media (min-width: 1300px) {
     :root {
         --transform-value: 45%;
