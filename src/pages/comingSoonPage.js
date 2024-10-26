@@ -34,7 +34,7 @@ const ComingSoonPage = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     
-    fetch('https://formspree.io/f/manynkpe', {
+    fetch('https://formspree.io/f/xbljlnee', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

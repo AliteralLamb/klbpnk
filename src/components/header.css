@@ -63,6 +63,16 @@
     text-align: center;
     transform: translateX(var(--transform-value));
 }
+@media (min-width: 1000px) {
+    :root {
+        --transform-value: -45%;
+    }
+}
+@media (min-width: 1300px) {
+    :root {
+        --transform-value: -38%;
+    }
+}
 @media (min-width: 1500px) {
     :root {
         --transform-value: -20%;
